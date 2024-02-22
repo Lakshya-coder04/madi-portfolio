@@ -19,23 +19,26 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           className='w-20'
         />
         <BsFillMoonStarsFill
-          className='cursor-pointer text-2xl dark:text-orange-400'
+          className='cursor-pointer text-2xl dark:text-orange-400 flex-1'
           onClick={() => setDarkMode(!darkMode)}
         />
-        <ul className='hidden px-4 gap-8 justify-between items-center list-none '>
-          <li className='bg-gradient-to-r from-blue-500 to-teal-400 text-md text-white px-3 py-2 rounded-lg'>
+        <ul className='hidden md:flex md:justify-between md:items-center md:flex-2 md:gap-7'>
+          <li className='text-md text-gray-900 dark:text-white'>
             <a href='#aboutme'>About Me</a>
           </li>
-          <li className='bg-gradient-to-r from-teal-400 to-blue-500 text-md text-white px-4 py-2 rounded-lg'>
+          <li className='text-md text-gray-900 dark:text-white'>
             <a href='#services'>Services</a>
           </li>
-          <li className='bg-gradient-to-r from-blue-500 to-teal-400 text-md text-white px-3 py-2 rounded-lg'>
+          <li className='text-md text-gray-900 dark:text-white'>
             <a href='#aboutme'>Contact</a>
+          </li>
+          <li className=' text-md text-slate-50 md:bg-gradient-to-b from-blue-500 to-teal-400 px-3 py-2 rounded-full'>
+            <a href='#aboutme'>Get a Quote</a>
           </li>
         </ul>
         <div className='flex'>
           <GiHamburgerMenu
-            className='cursor-pointer dark:text-white'
+            className='cursor-pointer dark:text-white md:hidden'
             fontSize={35}
             onClick={() => setToggleMenu(true)}
           />
