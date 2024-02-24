@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import './index.css';
-import { Navbar, AboutMe, Services, BgAnim } from './components';
+import { Navbar, AboutMe, Services, BgAnim, ContactUs } from './components';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -13,6 +13,7 @@ const App = () => {
           {/* <BgAnim darkMode={darkMode} setDarkMode={setDarkMode} /> */}
           <AboutMe darkMode={darkMode} setDarkMode={setDarkMode} />
           <Services darkMode={darkMode} setDarkMode={setDarkMode} />
+          <ContactUs darkMode={darkMode} setDarkMode={setDarkMode} />
         </section>
       </div>
     </div>

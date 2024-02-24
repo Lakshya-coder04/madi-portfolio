@@ -46,7 +46,7 @@ const Services = ({ darkMode, setDarkMode }) => {
                 alt='property'
               />
               <div
-                className='flex items-center bg-black text-white focus:outline-none cursor-pointer select-none hover:bg-blue-500 transition-colors duration-300'
+                className='flex justify-between items-center bg-black text-white focus:outline-none cursor-pointer select-none hover:bg-blue-500 transition-colors duration-300'
                 onClick={() => toggleAccordion('residential')}
               >
                 <span className='flex items-center gap-10 text-xl py-2 px-2 m-5'>
@@ -75,7 +75,7 @@ const Services = ({ darkMode, setDarkMode }) => {
                 alt='property'
               />
               <div
-                className='flex items-center bg-black text-white focus:outline-none cursor-pointer select-none hover:bg-blue-500 transition-colors duration-300'
+                className='flex items-center justify-between bg-black text-white focus:outline-none cursor-pointer select-none hover:bg-blue-500 transition-colors duration-300'
                 onClick={() => toggleAccordion('acre')}
               >
                 <span className='flex items-center gap-10 text-xl py-2 px-2 m-5'>
