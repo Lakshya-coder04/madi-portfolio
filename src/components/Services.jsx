@@ -7,14 +7,11 @@ const Services = ({ darkMode, setDarkMode }) => {
 
   const toggleAccordion = (index) => {
     setIsOpen((prevState) => {
-      console.log('prevState : ', prevState);
       // Create a new state object
       const newState = {};
 
-      console.log('newState: ', newState);
       // Set all accordion items to closed (false)
       Object.keys(prevState).forEach((key) => {
-        console.log('key : ', key);
         newState[key] = false;
       });
 
@@ -29,8 +26,8 @@ const Services = ({ darkMode, setDarkMode }) => {
     <div>
       <section className='mt-10'>
         <div>
-          <h2 className='text-3xl text-slate-800 font-bold dark:text-gray-100'>
-            Services I Offer
+          <h2 className='text-3xl text-slate-800 font-bold dark:text-gray-100 text-center lg:text-left'>
+            Services We Offer
           </h2>
           <p className='py-5 text-gray-600 text-xl leading-8 tracking-wide dark:text-gray-200'>
             Since starting my Career as a{' '}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const ContactUs = ({ darkMode, setDarkMode }) => {
-  var key = 'dea0f3fd-5395-4f5d-8087-63b623ef58cb';
+  var key = 'fc155ea8-a20e-4b80-bafa-144086ccad05';
 
   // State variables for message and input values
   const [messageSent, setMessageSent] = useState(false);
@@ -58,7 +58,7 @@ const ContactUs = ({ darkMode, setDarkMode }) => {
 
   return (
     <div>
-      <div className='contact-page mb-10 mt-10 flex flex-col'>
+      <div className='contact-page mt-10 flex flex-col '>
         <h1 className='text-3xl text-slate-800 font-bold dark:text-gray-100'>
           Contact Us
         </h1>
