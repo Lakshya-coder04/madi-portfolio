@@ -3,13 +3,17 @@ import { RxCross1 } from 'react-icons/rx';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import images from '../images/images';
-import 'animate.css';
+import { motion as m } from 'framer-motion';
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
   return (
-    <div>
+    <m.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 3, ease: 'easeOut' }}
+    >
       <nav className='flex justify-between items-center py-10 mb-12'>
         <img
           src={
@@ -75,7 +79,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           )}
         </div>
       </nav>
-    </div>
+    </m.div>
   );
 };
 

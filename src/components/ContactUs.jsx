@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import letter from './letter.json';
+import Lottie from 'lottie-react';
 
 const ContactUs = ({ darkMode, setDarkMode }) => {
   var key = 'fc155ea8-a20e-4b80-bafa-144086ccad05';
@@ -57,15 +59,17 @@ const ContactUs = ({ darkMode, setDarkMode }) => {
   };
 
   return (
-    <div>
-      <div className='contact-page mt-10 flex flex-col '>
+    <div className='flex flex-col md:flex-row lg:flex-row'>
+      <Lottie animationData={letter} className='lg:w-3/4' />
+
+      <div className='mt-10 flex flex-col '>
         <h1 className='text-3xl text-slate-800 font-bold dark:text-gray-100'>
           Contact Us
         </h1>
 
         <form
           onSubmit={onSubmit}
-          className='my-5 max-w-md mx-auto lg:max-w-xl flex flex-col '
+          className='my-5 max-w-md mx-auto lg:max-w-2xl flex flex-col'
         >
           <input type='hidden' name='access_key' value={key} />
           <div className='relative z-0 w-full mb-5 group'>
