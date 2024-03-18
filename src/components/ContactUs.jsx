@@ -59,10 +59,10 @@ const ContactUs = ({ darkMode, setDarkMode }) => {
   };
 
   return (
-    <div className='flex flex-col md:flex-row lg:flex-row'>
+    <div className='flex flex-col items-center md:flex-row lg:flex-row lg:justify-between xl:px-20'>
       <Lottie animationData={letter} className='lg:w-3/4' />
 
-      <div className='mt-10 flex flex-col '>
+      <div className='mt-10 flex flex-col'>
         <h1 className='text-3xl text-slate-800 font-bold dark:text-gray-100'>
           Contact Us
         </h1>
